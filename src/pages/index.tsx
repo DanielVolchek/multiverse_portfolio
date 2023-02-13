@@ -3,6 +3,7 @@ import Layout from "@/components/layout";
 import Image from "next/image";
 import me from "@/images/stock.jpeg";
 import Redirect from "@/components/redirect";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -31,7 +32,17 @@ const Intro = () => {
         alt="Picture of me"
         className="rounded-full float-right w-1/4"
       />
-      <h1 className="text-4xl">Hey There👋 My name is Daniel Volchek</h1>
+      <h1 className="text-4xl mb-1">Hey There👋 My name is Daniel Volchek.</h1>
+      <p className="text-xl">
+        Welcome to my portfolio website, built for{" "}
+        <Link
+          className="text-lapizlazuli underline hover:text-charcoal"
+          href={"https://multiverse.io"}
+        >
+          Multiverse
+        </Link>
+        !
+      </p>
     </section>
   );
 };

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Redirections = [
-  { name: "Full Stack Dev", path: "/portfolio" },
+  { name: "Full Stack Dev", path: "/fsdev" },
   { name: "Skateboarder", path: "/skater" },
   { name: "Rock Climber", path: "/rockclimber" },
   { name: "Ramen Lover", path: "/ramen" },
@@ -50,7 +50,7 @@ const VerticalCarousel = ({}: Props) => {
           className={`text-8xl ${
             currentIndex % 2 === 0 ? "text-thulianpink" : "text-hunyadiyellow"
           } hover:underline mr-8 
-          min-w-[35vw]
+          w-[35vw]
           `}
           href={Redirections[currentIndex].path}
         >

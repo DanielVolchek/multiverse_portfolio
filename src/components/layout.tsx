@@ -15,7 +15,7 @@ const variants = {
 
 const Layout = ({ children, className }: Props) => {
   return (
-    <div className="bg-iceblue min-h-screen">
+    <div className="bg-iceblue min-h-screen overflow-x-hidden">
       <Nav />
       <motion.main
         variants={variants}
@@ -23,11 +23,11 @@ const Layout = ({ children, className }: Props) => {
         animate="enter"
         exit="exit"
         transition={{ duration: 0.8 }}
-        className={`${className ?? ""} mx-16 `}
+        className={`${className ?? ""} mx-16 min-h-[85vh]`}
       >
         {children}
       </motion.main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
