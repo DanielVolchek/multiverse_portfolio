@@ -51,7 +51,6 @@ const VerticalCarousel = ({}: Props) => {
             currentIndex % 2 === 0 ? "text-thulianpink" : "text-hunyadiyellow"
           } hover:underline mr-8 
           min-w-[35vw]
-          transition-colors duration-700 ease-in-out
           `}
           href={Redirections[currentIndex].path}
         >
@@ -103,8 +102,10 @@ const Dot = ({
   return (
     <div
       className={`rounded-full w-8 h-8 ${
-        currentIndex === dotIndex ? "bg-lapizlazuli" : "bg-none"
-      } border-solid border-4 border-black my-4 cursor-pointer`}
+        currentIndex === dotIndex
+          ? "bg-lapizlazuli"
+          : "bg-none hover:bg-teal-100"
+      } border-solid border-4 border-black my-4 cursor-pointer `}
       onClick={pressedDot}
     ></div>
   );
