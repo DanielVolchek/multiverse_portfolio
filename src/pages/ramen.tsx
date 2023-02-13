@@ -1,5 +1,6 @@
 import Head from "next/head";
 import MotionWrapper from "@/components/motion";
+import Layout from "@/components/layout";
 
 export default function Ramen() {
   return (
@@ -10,10 +11,9 @@ export default function Ramen() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <MotionWrapper>
-        <h1>Hi my name is Daniel Volchek</h1>
-        <h3>I'm a...</h3>
-      </MotionWrapper>
+      <Layout>
+        <h1>Full Stack Ramen</h1>
+      </Layout>
     </>
   );
 }

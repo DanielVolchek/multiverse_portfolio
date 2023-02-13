@@ -1,5 +1,8 @@
 import Head from "next/head";
 import Layout from "@/components/layout";
+import Image from "next/image";
+import me from "@/images/stock.jpeg";
+import Redirect from "@/components/redirect";
 
 export default function Home() {
   return (
@@ -11,9 +14,24 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <h1 className="text-red-400">Hi my name is Daniel Volchek</h1>
-        <h3>I'm a...</h3>
+        <div className="flex">
+          <Intro />
+        </div>
+        <Redirect />
       </Layout>
     </>
   );
 }
+
+const Intro = () => {
+  return (
+    <section className="text-charcoal">
+      <Image
+        src={me}
+        alt="Picture of me"
+        className="rounded-full float-right w-1/4"
+      />
+      <h1 className="text-4xl">Hey There👋 My name is Daniel Volchek</h1>
+    </section>
+  );
+};

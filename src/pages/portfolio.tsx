@@ -1,5 +1,5 @@
+import Layout from "@/components/layout";
 import Head from "next/head";
-import MotionWrapper from "@/components/motion";
 
 export default function Portfolio() {
   return (
@@ -10,10 +10,9 @@ export default function Portfolio() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <MotionWrapper>
-        <h1>Hi my name is Daniel Volchek</h1>
-        <h3>I'm a...</h3>
-      </MotionWrapper>
+      <Layout>
+        <h1>Full Stack Dev</h1>
+      </Layout>
     </>
   );
 }
