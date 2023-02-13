@@ -1,4 +1,5 @@
 import Layout from "@/components/layout";
+import Projects from "@/components/projects";
 import Head from "next/head";
 
 export default function Portfolio() {
@@ -12,6 +13,7 @@ export default function Portfolio() {
       </Head>
       <Layout>
         <h1>Full Stack Dev</h1>
+        <Projects />
       </Layout>
     </>
   );
