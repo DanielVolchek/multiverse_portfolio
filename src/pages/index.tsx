@@ -26,23 +26,37 @@ export default function Home() {
 
 const Intro = () => {
   return (
-    <section className="text-charcoal">
-      <Image
-        src={me}
-        alt="Picture of me"
-        className="rounded-full float-right w-1/4"
-      />
-      <h1 className="text-4xl mb-1">Hey There👋 My name is Daniel Volchek.</h1>
-      <p className="text-xl">
-        Welcome to my portfolio website, built for{" "}
-        <Link
-          className="text-lapizlazuli underline hover:text-charcoal"
-          href={"https://multiverse.io"}
-        >
-          Multiverse
-        </Link>
-        !
-      </p>
+    <section>
+      <div className="flex gap-4">
+        <div>
+          <h1 className="text-5xl mb-1 ">Hello! 👋</h1>
+          <h3 className="text-3xl ">My name is Daniel Volchek.</h3>
+          <p className="text-xl text-charcoal">
+            Welcome to my portfolio website, built for{" "}
+            <Link
+              className="text-lapizlazuli underline hover:text-charcoal"
+              href={"https://multiverse.io"}
+            >
+              Multiverse
+            </Link>
+            !
+          </p>
+        </div>
+        {/* <Image */}
+        {/*   src={me} */}
+        {/*   alt="Picture of me" */}
+        {/*   className="rounded-full w-1/4 -scale-x-100" */}
+        {/* /> */}
+      </div>
+      <div>
+        <h2 className="text-4xl text-black">About Me</h2>
+        <p className="text-xl w-7/12 text-charcoal">
+          I'm a (mostly) self taught developer living in NYC. I have a passion
+          for all things tech, and I'm excited every day for all the
+          possibilities. I started my career working as an Intern at Publicis
+          Health, before moving to Clover as a Software Engineer Apprentice.
+        </p>
+      </div>
     </section>
   );
 };

@@ -10,16 +10,16 @@ const ProjectCard = ({ project }: Prop) => {
   const { title, shortdesc, img, longdesc, stack } = project;
 
   return (
-    <div className="w-1/2 px-4 items-center mb-3 ">
-      <h3 className="text-center text-4xl pb-1">{title}</h3>
+    <div className="w-1/2 flex flex-col px-4 items-center mb-3 ">
+      <h3 className="text-center text-4xl mb-1">{title}</h3>
       <Link href={`/projects/${title}`}>
         <Image
           src={img}
           alt={title}
-          className="border-[3px] border-thulianpink rounded-lg"
+          className="border-[3px] border-thulianpink rounded-lg h-[500px] w-auto"
         />
       </Link>
-      <span className="text-2xl text-center text-charcoal">{shortdesc}</span>
+      <span className="text-2xl text-center text-slate-600">{shortdesc}</span>
     </div>
   );
 };

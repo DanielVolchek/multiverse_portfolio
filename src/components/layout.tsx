@@ -22,12 +22,12 @@ const Layout = ({ children, className }: Props) => {
         initial="hidden"
         animate="enter"
         exit="exit"
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 1.2, ease: "easeInOut" }}
         className={`${className ?? ""} mx-16 min-h-[85vh]`}
       >
         {children}
       </motion.main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

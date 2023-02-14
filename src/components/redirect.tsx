@@ -2,9 +2,13 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Redirections = [
-  { name: "Full Stack Dev", path: "/fsdev" },
+  { name: "Full Stack Developer", path: "/fsdev" },
   { name: "Skateboarder", path: "/skater" },
   { name: "Rock Climber", path: "/rockclimber" },
+  {
+    name: "Neovim Enthusiast",
+    path: "https://github.com/danielvolchek/dotfiles",
+  },
   { name: "Ramen Lover", path: "/ramen" },
 ];
 
@@ -44,23 +48,23 @@ const VerticalCarousel = ({}: Props) => {
 
   return (
     <div className="flex items-center">
-      <div className="flex flex-col">
+      <div className="flex flex-col self-start">
         <h3 className="text-6xl">I'm a...</h3>
         <Link
           className={`text-8xl ${
             currentIndex % 2 === 0 ? "text-thulianpink" : "text-hunyadiyellow"
           } hover:underline mr-8 
-          w-[35vw]
+pl-4
           `}
           href={Redirections[currentIndex].path}
         >
           {Redirections[currentIndex].name}
         </Link>
+        <DotContainer
+          currentIndex={currentIndex}
+          setCurrentIndex={setIndexFromDot}
+        />
       </div>
-      <DotContainer
-        currentIndex={currentIndex}
-        setCurrentIndex={setIndexFromDot}
-      />
     </div>
   );
 };
@@ -71,7 +75,7 @@ type DotContainerProps = {
 };
 const DotContainer = ({ currentIndex, setCurrentIndex }: DotContainerProps) => {
   return (
-    <div className="-ml-16">
+    <div className="flex gap-2">
       {Redirections.map((_, index) => {
         return (
           <Dot

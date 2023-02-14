@@ -40,7 +40,8 @@ export const projectList: Project[] = [
   },
   {
     title: "Tailiscope",
-    shortdesc: "A neovim plugin to make working with TailwindCSS easier",
+    shortdesc:
+      "A neovim plugin utilizing Telescope.nvim to provide quick access to TailwindCSS properties and documentation",
     img: tailiscope,
     longdesc: "",
     stack: ["lua"],
@@ -49,7 +50,7 @@ export const projectList: Project[] = [
 
 const Projects = () => {
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap justify-center space-evenly">
       {projectList.map((project) => {
         return <ProjectCard project={project} key={project.title} />;
       })}
