@@ -15,7 +15,7 @@ const variants = {
 
 const Layout = ({ children, className }: Props) => {
   return (
-    <div className="bg-iceblue min-h-screen overflow-x-hidden">
+    <div className="bg-[#ffffed] min-h-screen overflow-x-hidden">
       <Nav />
       <motion.main
         variants={variants}

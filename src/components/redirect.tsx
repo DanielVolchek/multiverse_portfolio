@@ -21,11 +21,11 @@ export default function Test() {
   return (
     <div className="flex flex-col">
       {Redirections.map((redirection, index) => (
-        <Link href={redirection.path}>
+        <Link href={redirection.path} className="inline-block w-max">
           <span
             className={`text-8xl ${
               index % 2 === 0 ? "text-hunyadiyellow" : "text-thulianpink ml-24 "
-            } mr-8 animated_underline`}
+            } animated_underline w-full`}
           >
             {redirection.name}
           </span>

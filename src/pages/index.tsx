@@ -29,7 +29,7 @@ const Intro = () => {
     <section>
       <div className="flex gap-4">
         <div>
-          <h1 className="text-5xl mb-1 ">Hello! 👋</h1>
+          <h1 className="text-5xl mb-1 text-lavendar">Hello! 👋</h1>
           <h3 className="text-3xl ">My name is Daniel Volchek.</h3>
           <p className="text-xl text-charcoal">
             Welcome to my portfolio website, built for{" "}
