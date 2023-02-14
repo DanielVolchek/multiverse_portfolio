@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.animated_underline {
+  position: relative;
+}
+
+.animated_underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: currentColor;
+  transition: width 0.6s ease;
+  transform-origin: left;
+}
+
+.animated_underline:hover::after {
+  width: 100%;
+}

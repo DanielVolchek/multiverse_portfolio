@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 const Redirections = [
   { name: "Full Stack Developer", path: "/fsdev" },
   { name: "Skateboarder", path: "/skater" },
-  { name: "Rock Climber", path: "/rockclimber" },
   {
     name: "Neovim Enthusiast",
     path: "https://github.com/danielvolchek/dotfiles",
   },
+  { name: "Rock Climber", path: "/rockclimber" },
   { name: "Ramen Lover", path: "/ramen" },
 ];
 
@@ -21,15 +21,14 @@ export default function Test() {
   return (
     <div className="flex flex-col">
       {Redirections.map((redirection, index) => (
-        <Link
-          className={`text-8xl ${
-            index % 2 === 0 ? "text-thulianpink" : "text-hunyadiyellow pl-24"
-          } hover:underline mr-8 
-pl-4
-          `}
-          href={Redirections[index].path}
-        >
-          {Redirections[index].name}
+        <Link href={redirection.path}>
+          <span
+            className={`text-8xl ${
+              index % 2 === 0 ? "text-hunyadiyellow" : "text-thulianpink ml-24 "
+            } mr-8 animated_underline`}
+          >
+            {redirection.name}
+          </span>
         </Link>
       ))}
     </div>
