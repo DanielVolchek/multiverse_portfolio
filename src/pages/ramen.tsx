@@ -1,5 +1,4 @@
 import Head from "next/head";
-import MotionWrapper from "@/components/motion";
 import Layout from "@/components/layout";
 import Image, { StaticImageData } from "next/image";
 import shin from "@/images/ramen1.jpeg";
@@ -20,12 +19,12 @@ const RamenList: RamenObject[] = [
   },
   {
     name: "Costco Ramen",
-    desc: "Costco Ramen is a very close second. It has a much richer broth than the Shin Ramen, and the spicy paste that is included is more than decent as well. Still, something about it just doesn't perfectly satisfy quite as well as the Shin Ramen. Much love to Costco Ramen though <3",
+    desc: "Costco Ramen is a very close second. It has a much richer broth than the Shin Ramen, and the spicy paste that is included is more than decent as well. Still, something about it just doesn&apos;t perfectly satisfy quite as well as the Shin Ramen. Much love to Costco Ramen though <3",
     img: costco,
   },
   {
     name: "Top Ramen",
-    desc: "Top Ramen gets a special place on this list. It is not the third tastiest ramen, but in a pinch this stuff is extremely reliable. I've had too many nights of Top Ramen dinner to count. It holds a special place in my heart and I hope I never need to eat it again :D",
+    desc: "Top Ramen gets a special place on this list. It is not the third tastiest ramen, but in a pinch this stuff is extremely reliable. I&apos;ve had too many nights of Top Ramen dinner to count. It holds a special place in my heart and I hope I never need to eat it again :D",
     img: topramen,
   },
 ];
@@ -49,7 +48,7 @@ export default function RamenPage() {
         </p>
         <ol>
           {RamenList.map((ramen) => {
-            return <RamenCard ramen={ramen} />;
+            return <RamenCard ramen={ramen} key={ramen.name} />;
           })}
         </ol>
       </Layout>

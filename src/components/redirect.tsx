@@ -15,11 +15,15 @@ export default function Redirects() {
   return (
     <div className="flex flex-col mt-4">
       <h3 className="text-xl text-charcoal">
-        While you're here, why not take a look around?
+        While you&apos;re here, why not take a look around?
       </h3>
-      <h3 className="text-4xl lg:text-5xl">I'm a...</h3>
+      <h3 className="text-4xl lg:text-5xl">I&apos;m a...</h3>
       {Redirections.map((redirection, index) => (
-        <Link href={redirection.path} className="inline-block w-max">
+        <Link
+          key={index}
+          href={redirection.path}
+          className="inline-block w-max"
+        >
           <span
             className={`text-4xl md:text-6xl lg:text-8xl sm:pl-2 md:pl-4 lg:pl-6 xl:pl-8 ${
               index % 2 === 0

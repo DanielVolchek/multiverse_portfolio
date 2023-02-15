@@ -16,10 +16,10 @@ export default function Portfolio() {
         <div className="pl-1">
           <h3 className="text-3xl">Are you really?</h3>
           <p className="w-[65vw] pl-4 ">
-            Well, I will be. Right now I'm just a Software Engineer apprentice.
-            The endgoal is to move up to eventually becoming a Senior Fullstack
-            Engineer, with a priority on backend development (or at least
-            non-design oriented frontend...)
+            Well, I will be. Right now I&apos;m just a Software Engineer
+            apprentice. The endgoal is to move up to eventually becoming a
+            Senior Fullstack Engineer, with a priority on backend development
+            (or at least non-design oriented frontend...)
           </p>
           <h3 className="text-3xl">Why Fullstack?</h3>
           <p className="w-[65vw] pl-4">

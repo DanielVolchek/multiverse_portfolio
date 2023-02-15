@@ -4,7 +4,7 @@ import { Redirections } from "./redirect";
 
 const MovementTime = 1500;
 
-const linkCarousel = () => {
+const LinkCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [remainingTime, setRemainingTime] = useState(MovementTime);
 
@@ -99,4 +99,4 @@ const Dot = ({
   );
 };
 
-export default linkCarousel;
+export default LinkCarousel;
