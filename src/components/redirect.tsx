@@ -9,7 +9,7 @@ const Redirections = [
     path: "https://github.com/danielvolchek/dotfiles",
   },
   { name: "Rock Climber", path: "/rockclimber" },
-  { name: "Ramen Lover", path: "/ramen" },
+  { name: "Instant Ramen Lover", path: "/ramen" },
 ];
 
 // time in ms to rotate carousel
@@ -20,10 +20,11 @@ type Props = {};
 export default function Test() {
   return (
     <div className="flex flex-col">
+      <h3 className="text-6xl mt-8">I'm a...</h3>
       {Redirections.map((redirection, index) => (
         <Link href={redirection.path} className="inline-block w-max">
           <span
-            className={`text-8xl ${
+            className={`text-8xl pl-8 ${
               index % 2 === 0 ? "text-hunyadiyellow" : "text-thulianpink ml-24 "
             } animated_underline w-full`}
           >
@@ -67,7 +68,6 @@ export default function Test() {
 //   return (
 //     <div className="flex items-center">
 //       <div className="flex flex-col self-start">
-//         <h3 className="text-6xl">I'm a...</h3>
 //         <Link
 //           className={`text-8xl ${
 //             currentIndex % 2 === 0 ? "text-thulianpink" : "text-hunyadiyellow"

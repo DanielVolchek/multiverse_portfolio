@@ -12,7 +12,7 @@ export default function Portfolio() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <h1 className="text-5xl">Full Stack Dev</h1>
+        <h1 className="text-5xl text-hunyadiyellow">Full Stack Dev</h1>
         <div className="pl-1">
           <h3 className="text-3xl">Are you really?</h3>
           <p className="w-[65vw] pl-4 ">
@@ -30,7 +30,7 @@ export default function Portfolio() {
             help me to become an invaluable member of any team I work on.
           </p>
         </div>
-        <h3 className="text-5xl">Featured Projects</h3>
+        <h3 className="text-5xl text-hunyadiyellow">Featured Projects</h3>
         <Projects />
       </Layout>
     </>

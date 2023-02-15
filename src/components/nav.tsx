@@ -8,12 +8,15 @@ const Nav = () => {
     <>
       <div
         className={`${
-          showNav ? "h-32 border-[16px]" : "h-0"
-        } overflow-hidden flex justify-evenly bg-white items-center  border-black transition-all`}
+          showNav ? "h-32 border-[16px] " : "h-0 "
+        } px-4 overflow-hidden flex justify-between bg-white items-center  border-black transition-all duration-500
+        `}
       >
         <HomeButton />
         <p>I'm a nav</p>
-        <p>Third thing</p>
+        <div className="">
+          <h3>Links</h3>
+        </div>
       </div>
       <ShowButton currentState={showNav} updateShow={setShowNav} />
     </>
@@ -96,7 +99,7 @@ const HomeButton = () => {
         xmlnsXlink="http://www.w3.org/1999/xlink"
         viewBox="0 0 448.512 448.512"
         xmlSpace="preserve"
-        className="border-black border-2 rounded-full p-2 w-12 h-auto fill-black hover:fill-lapizlazuli hover:border-lapizlazuli"
+        className="border-black border-2 rounded-full p-2 w-12 h-auto fill-black hover:fill-hunyadiyellow hover:border-hunyadiyellow"
       >
         <g>
           <path
