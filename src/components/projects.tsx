@@ -1,4 +1,4 @@
-import hchat from "@/images/hchat.png";
+import hchat from "@/images/hChat.png";
 import soap from "@/images/soap.png";
 import gentax from "@/images/gentax.png";
 import tailiscope from "@/images/tailiscope.png";
