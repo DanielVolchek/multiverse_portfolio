@@ -2,7 +2,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Redirections = [
-  { name: "Full Stack Developer", path: "/fsdev" },
+  { name: "Human Person", path: "/about" },
+  { name: "Full Stack Developer", path: "/portfolio" },
   { name: "Skateboarder", path: "/skater" },
   {
     name: "Neovim Enthusiast",
@@ -20,7 +21,7 @@ type Props = {};
 export default function Test() {
   return (
     <div className="flex flex-col">
-      <h3 className="text-6xl mt-8">I'm a...</h3>
+      <h3 className="text-6xl mt-6">I'm a...</h3>
       {Redirections.map((redirection, index) => (
         <Link href={redirection.path} className="inline-block w-max">
           <span
