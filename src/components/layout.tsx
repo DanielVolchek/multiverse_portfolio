@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Nav from "./nav";
+import Header from "./nav";
 import Footer from "./footer";
 
 type Props = {
@@ -16,14 +16,14 @@ const variants = {
 const Layout = ({ children, className }: Props) => {
   return (
     <div className="bg-[#ffffed] min-h-screen overflow-x-hidden">
-      <Nav />
+      <Header />
       <motion.main
         variants={variants}
         initial="hidden"
         animate="enter"
         exit="exit"
         transition={{ duration: 1.2, ease: "easeInOut" }}
-        className={`${className ?? ""} mx-16 min-h-[85vh]`}
+        className={`${className ?? ""} mt-4 mx-32 min-h-[85vh]`}
       >
         {children}
       </motion.main>

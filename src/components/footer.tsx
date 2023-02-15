@@ -2,8 +2,9 @@ const breakpoints = "w-11/12 md:w-3/4 xl:w-4/6";
 
 export default function Footer() {
   return (
-    <footer className={`mt-4 relative flex justify-center py-4`}>
-      <div className="absolute left-0 top-0 h-1 w-screen bg-hunyadiyellow"></div>
+    <footer
+      className={`mt-4 relative flex justify-center py-4 border-t-hunyadiyellow border-4`}
+    >
       <div className={`flex items-center justify-between gap-4 ${breakpoints}`}>
         <h3 className="">Hello, World!</h3>
         <div className="flex w-1/4 items-center justify-end gap-4">

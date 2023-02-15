@@ -48,15 +48,6 @@ const Intro = () => {
         {/*   className="rounded-full w-1/4 -scale-x-100" */}
         {/* /> */}
       </div>
-      <div>
-        <h2 className="text-4xl text-black">About Me</h2>
-        <p className="text-xl w-7/12 text-charcoal">
-          I'm a (mostly) self taught developer living in NYC. I have a passion
-          for all things tech, and I'm excited every day for all the
-          possibilities. I started my career working as an Intern at Publicis
-          Health, before moving to Clover as a Software Engineer Apprentice.
-        </p>
-      </div>
     </section>
   );
 };

@@ -16,7 +16,7 @@ const ProjectCard = ({ project }: Prop) => {
         <Image
           src={img}
           alt={title}
-          className="border-[3px] border-hunyadiyellow rounded-lg h-[500px] w-auto"
+          className="border-[3px] border-thulianpink rounded-lg h-[500px] w-auto"
         />
       </Link>
       <span className="text-2xl text-center text-slate-600">{shortdesc}</span>
