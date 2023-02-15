@@ -5,15 +5,16 @@ import tailiscope from "@/images/tailiscope.png";
 import { StaticImageData } from "next/image";
 import ProjectCard from "./projectcard";
 
-export type Project = {
+export type ProjectType = {
   title: string;
   shortdesc: string;
   img: StaticImageData;
   longdesc: string;
   stack: string[];
+  link: string;
 };
 
-export const projectList: Project[] = [
+export const projectList: ProjectType[] = [
   {
     title: "hChat",
     shortdesc:
@@ -21,6 +22,7 @@ export const projectList: Project[] = [
     img: hchat,
     longdesc: "",
     stack: ["javascript", "react", "go", "css", "postgresql"],
+    link: "https://github.com/danielvolchek/hchat",
   },
   {
     title: "SOAP",
@@ -29,6 +31,7 @@ export const projectList: Project[] = [
     img: soap,
     longdesc: "",
     stack: ["typescript", "react", "electron", "nodejs", "sass"],
+    link: "#",
   },
   {
     title: "GenTaX",
@@ -37,6 +40,7 @@ export const projectList: Project[] = [
     img: gentax,
     longdesc: "",
     stack: ["typescript", "react", "tailwind", "nextjs", "postgresql"],
+    link: "https://github.com/danielvolchek/gentax",
   },
   {
     title: "Tailiscope",
@@ -45,12 +49,13 @@ export const projectList: Project[] = [
     img: tailiscope,
     longdesc: "",
     stack: ["lua"],
+    link: "https://github.com/danielvolchek/tailiscope.nvim",
   },
 ];
 
 const Projects = () => {
   return (
-    <div className="flex flex-wrap justify-center space-evenly">
+    <div className="flex flex-col lg:flex-row flex-wrap justify-center space-evenly">
       {projectList.map((project) => {
         return <ProjectCard project={project} key={project.title} />;
       })}
