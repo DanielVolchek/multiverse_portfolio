@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Redirections } from "./redirect";
+import LinkCarousel from "./linkCarousel";
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
         <HomeButton />
       </motion.div>
       <p></p>
-      <Links />
+      <LinkCarousel />
     </header>
   );
 };
@@ -54,14 +54,14 @@ const HomeButton = () => {
   );
 };
 
-const Links = () => {
-  return (
-    <div>
-      {Redirections.map(({ name, path }) => {
-        return <Link href={path}>{name}</Link>;
-      })}
-    </div>
-  );
-};
+// const Links = () => {
+//   return (
+//     <div>
+//       {Redirections.map(({ name, path }) => {
+//         return <Link href={path}>{name}</Link>;
+//       })}
+//     </div>
+//   );
+// };
 
 export default Header;
