@@ -19,12 +19,12 @@ const RamenList: RamenObject[] = [
   },
   {
     name: "Costco Ramen",
-    desc: "Costco Ramen is a very close second. It has a much richer broth than the Shin Ramen, and the spicy paste that is included is more than decent as well. Still, something about it just doesn&apos;t perfectly satisfy quite as well as the Shin Ramen. Much love to Costco Ramen though <3",
+    desc: "Costco Ramen is a very close second. It has a much richer broth than the Shin Ramen, and the spicy paste that is included is more than decent as well. Still, something about it just doesn't perfectly satisfy quite as well as the Shin Ramen. Much love to Costco Ramen though <3",
     img: costco,
   },
   {
     name: "Top Ramen",
-    desc: "Top Ramen gets a special place on this list. It is not the third tastiest ramen, but in a pinch this stuff is extremely reliable. I&apos;ve had too many nights of Top Ramen dinner to count. It holds a special place in my heart and I hope I never need to eat it again :D",
+    desc: "Top Ramen gets a special place on this list. It is not the third tastiest ramen, but in a pinch this stuff is extremely reliable. I've had too many nights of Top Ramen dinner to count. It holds a special place in my heart and I hope I never need to eat it again :D",
     img: topramen,
   },
 ];
@@ -46,7 +46,7 @@ export default function RamenPage() {
           My (biased) list of the top 3 ramen brands when you need food in a
           pinch
         </p>
-        <ol>
+        <ol className="">
           {RamenList.map((ramen) => {
             return <RamenCard ramen={ramen} key={ramen.name} />;
           })}
@@ -64,10 +64,10 @@ const RamenCard = ({ ramen }: RamenProps) => {
   const { name, desc, img } = ramen;
 
   return (
-    <div>
-      <h3>{name}</h3>
+    <li className="list-disc">
+      <h3 className="text-4xl text-hunyadiyellow list-item">{name}</h3>
       <Image src={img} alt={name} />
       <p>{desc}</p>
-    </div>
+    </li>
   );
 };
