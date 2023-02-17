@@ -21,9 +21,6 @@ export default function Home() {
         </div>
         <Redirect />
         <h3 className="text-5xl text-charcoal mt-10">Contact Me!</h3>
-        <h6 className="text-xs">
-          this was shamelessly stolen from chatgpt, thanks chatgpt
-        </h6>
         <ContactForm />
       </Layout>
     </>
